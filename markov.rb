@@ -3,7 +3,7 @@ require './utils'
 characters = read_text.chars
 table = {}
 
-characters.each_cons(100) do |seq|
+characters.each_cons(5) do |seq|
   table[seq.all_but_last] ||= []
   table[seq.all_but_last] << seq.last
 end
